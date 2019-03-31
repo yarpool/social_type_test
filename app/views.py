@@ -102,45 +102,45 @@ def index():
             if sense > ittr:
                 if e > l:
                     if intr > extr:
-                        return "Дюма"
+                        return render_template("1.html", social_type="Дюма", head="Дюма (Посредник)", image='image1.jpg')
                     else:
-                        return "Наполеон"
+                        return render_template("2.html", social_type="Наполеон", head="Наполеон (Политик)", image='image2.jpg')
                 else:
                     if intr > extr:
-                        return "Габен"
+                        return render_template("3.html", social_type="Габен", head="Габен (Мастер)", image='image3.jpg')
                     else:
-                        return "Жуков"
+                        return render_template("4.html", social_type="Жуков", head="Жуков (Маршал)", image='image4.jpg')
             else:
                 if e > l:
                     if intr > extr:
-                        return "Есенин"
+                        return render_template("5.html", social_type="Есенин", head="Есенин (Лирик)", image='image5.jpg')
                     else:
-                        return "Гексли"
+                        return render_template("6.html", social_type="Гексли", head="Гексли (Советчик)", image='image6.jpg')
                 else:
                     if intr > extr:
-                        return "Бальзак"
+                        return render_template("7.html", social_type="Бальзак", head="Бальзак (Критик)", image='image7.jpg')
                     else:
-                        return "Дон Кихот"
+                        return render_template("8.html", social_type="Дон Кихот", head="Дон Кихот (Искатель)", image='image8.jpg')
         else:
             if sense > ittr:
                 if e > l:
                     if intr > extr:
-                        return "Драйзер"
+                        return render_template("9.html", social_type="Драйзер", head="Драйзер (Хранитель)", image='image9.jpg')
                     else:
-                        return "Гюго"
+                        return render_template("10.html", social_type="Гюго", head="Гюго (Энтузиаст)", image='image10.jpg')
                 else:
                     if intr > extr:
-                        return "Максим Горький"
+                        return render_template("11.html", social_type="Максим Горький", head="Максим Горький (Инспектор)", image='image11.jpg')
                     else:
-                        return "Штирлиц"
+                        return render_template("12.html", social_type="Штирлиц", head="Штирлиц (Администратор)", image='image12.jpg')
             else:
                 if e > l:
                     if intr > extr:
-                        return "Джек Лондон"
+                        return render_template("13.html", social_type="Джек Лондон", head="Джек Лондон (Предприниматель)", image='image13.jpg')
                     else:
-                        return "Гамлет"
+                        return render_template("14.html", social_type="Гамлет", head="Гамлет (Наставник)", image='image14.jpg')
                 else:
                     if intr > extr:
-                        return "Достоевский"
+                        return render_template("15.html", social_type="Достоевский", head="Достоевский (Гуманист)", image='image15.jpg')
                     else:
-                        return "Робеспьер"
+                        return render_template("16.html", social_type="Робеспьер", head="Робеспьер (Аналитик)", image='image16.jpg')
