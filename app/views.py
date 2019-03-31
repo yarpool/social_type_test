@@ -1,8 +1,12 @@
 from flask import render_template
+from flask import request
 from app import app
 
 
-@app.route('/')
-@app.route('/index')
+@app.route('/', methods=['POST', 'GET'])
+@app.route('/index', methods=['POST', 'GET'])
 def index():
-    return render_template("main.html")
+    if request.method == 'GET':
+        return render_template("main.html")
+    elif request.method == 'POST':
+        return "форма отправлена"
